@@ -1,14 +1,10 @@
 # Saarthi - Inclusive Educational Platform
 
 <div align="center">
-  <img src="public/newwhitelogo.png" alt="Saarthi Logo" width="200"/>
+  <img src="public/shiksha.png" alt="Saarthi Logo" width="200"/>
   
   ### Empowering Abilities, Unlocking Potential: Education for All
-  
-  ![React](https://img.shields.io/badge/React-18.3.1-blue)
-  ![Firebase](https://img.shields.io/badge/Firebase-10.14.1-orange)
-  ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.3.3-cyan)
-  ![License](https://img.shields.io/badge/License-Private-red)
+ 
 </div>
 
 ## 🌟 Overview
