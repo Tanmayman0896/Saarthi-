@@ -20,26 +20,26 @@ export default function VoiceNav() {
       command: 'open *',
       callback: (site) => {
         const clean = site.split(" ").join("");
-        window.open(`https://shikshaedu.vercel.app/${clean}`);
+        window.open(`https://saarthi-5jqs.vercel.app//${clean}`);
       },
     },
     {
       command: 'go to *',
       callback: (site) => {
         const clean = site.split(" ").join("");
-        window.open(`https://shikshaedu.vercel.app/${clean}`);
+        window.open(`https://saarthi-5jqs.vercel.app//${clean}`);
       },
     },
     {
       command: 'open courses',
       callback: () => {
-        window.open("https://shikshaedu.vercel.app/coursecat");
+        window.open("https://saarthi-5jqs.vercel.app//coursecat");
       },
     },
     {
       command: 'enroll for *',
       callback: () => {
-        window.open("https://shikshaedu.vercel.app/videos");
+        window.open("https://saarthi-5jqs.vercel.app//videos");
       },
     },
     {
