@@ -4,7 +4,7 @@ import feedimg from './../images/feedback.png'
 import { useTheme } from '../contexts/ThemeContext';
 import { useTranslation } from 'react-i18next';
 import toast from 'react-hot-toast';
-// import { feedbackService } from '../services/feedbackService'; // Uncomment if you want to store feedback in Firestore
+import { feedbackService } from '../services/feedbackService'; // Store feedback in Firestore
 
 const Contact = () => {
   const form = useRef();
@@ -69,8 +69,7 @@ const Contact = () => {
       
       console.log('Feedback sent successfully via email:', result.text);
       
-      // Optionally save to Firestore (uncomment the lines below if you want to store feedback in database)
-      /*
+      // Save to Firestore
       try {
         await feedbackService.saveFeedback({
           name: formData.name,
@@ -82,7 +81,6 @@ const Contact = () => {
       } catch (firestoreError) {
         console.error('Failed to save to Firestore, but email sent successfully:', firestoreError);
       }
-      */
       
       // Hide loading toast
       toast.dismiss(loadingToast);
