@@ -1,8 +1,7 @@
 # Saarthi - Inclusive Educational Platform
 
 <div align="center">
-  <img src="public/shiksha.png" alt="Saarthi Logo" width="200"/>
-  
+
   ### Empowering Abilities, Unlocking Potential: Education for All
  
 </div>
