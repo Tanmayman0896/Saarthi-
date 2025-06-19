@@ -1,0 +1,175 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ensure proper z-index layering */
+.navbar-fixed {
+  z-index: 1000;
+}
+
+.dropdown-menu {
+  z-index: 1100;
+}
+
+.carousel-container {
+  z-index: 1;
+}
+
+/* Ensure slick carousel doesn't interfere with navigation */
+.slick-slider {
+  z-index: 1;
+}
+
+.slick-list {
+  z-index: 1;
+}
+
+/* Ensure header is always on top */
+header, nav {
+  position: relative;
+  z-index: 50;
+}
+
+/* Dark mode transitions */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Force header/navigation background colors */
+nav[class*="bg-white"] {
+  background-color: white !important;
+}
+
+.dark nav[class*="bg-white"] {
+  background-color: black !important;
+}
+
+/* Ensure header text colors are correct - Light Mode */
+nav a, nav button {
+  color: #374151 !important;
+}
+
+nav a:hover, nav button:hover {
+  color: #111827 !important;
+}
+
+/* Dark Mode header text colors */
+.dark nav a, .dark nav button {
+  color: #f9fafb !important;
+}
+
+.dark nav a:hover, .dark nav button:hover {
+  color: #ffffff !important;
+}
+
+/* Ensure dropdown menu text visibility */
+.bg-white a, .bg-white button {
+  color: #374151 !important;
+}
+
+.dark .bg-white a, .dark .bg-white button {
+  color: #f9fafb !important;
+}
+
+/* Footer text contrast fixes */
+.footer {
+  transition: all 0.3s ease;
+}
+
+.footer a {
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.footer a:hover {
+  opacity: 1;
+}
+
+/* Light mode footer fixes */
+.bg-white .footer-title {
+  color: #111827 !important;
+  opacity: 1;
+}
+
+.bg-white .footer a {
+  color: #374151 !important;
+}
+
+.bg-white .footer a:hover {
+  color: #111827 !important;
+}
+
+/* Dark mode footer fixes */
+.dark .footer-title {
+  color: #f9fafb !important;
+  opacity: 1;
+}
+
+.dark .footer a {
+  color: #d1d5db !important;
+}
+
+.dark .footer a:hover {
+  color: #f9fafb !important;
+}
+
+/* Override any conflicting styles */
+.dark .bg-white {
+  background-color: black !important;
+}
+
+/* Override Bootstrap carousel for dark mode */
+.dark .carousel {
+  background-color: #374151;
+}
+
+.dark .carousel-inner {
+  background-color: #374151;
+}
+
+.dark .carousel-item {
+  background-color: #374151;
+}
+
+/* Bootstrap form styling for dark mode */
+.dark .form-control {
+  background-color: #4b5563;
+  border-color: #6b7280;
+  color: #f9fafb;
+}
+
+.dark .form-control:focus {
+  background-color: #4b5563;
+  border-color: #60a5fa;
+  color: #f9fafb;
+  box-shadow: 0 0 0 0.2rem rgba(96, 165, 250, 0.25);
+}
+
+.dark .btn-primary {
+  background-color: #3b82f6;
+  border-color: #3b82f6;
+}
+
+.dark .btn-primary:hover {
+  background-color: #2563eb;
+  border-color: #2563eb;
+}
+
+/* Make sure text is visible in dark mode */
+.dark body {
+  color: #f9fafb;
+}
+
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
